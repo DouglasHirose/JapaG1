@@ -1,3 +1,66 @@
-body{
-    margin: 0;
+body > header{
+	height: 70px;
+	background: #FCAF55;
+	padding: 0 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+body > header nav a{
+	color: #FFF;
+	text-decoration: none;
+	padding: 0 0 21px 0;
+}
+
+body > header nav a:hover{
+	color: #ff5900;
+	
+	border-bottom: 3px solid #ff5900; 
+}
+
+body > header nav a.active{
+	color: #ac3c00;
+	border-bottom: 3px solid #ac3c00;
+}
+
+.logotipo{
+	display: flex;
+	align-items: center;
+    color: #FFF;
+}
+
+.logotipo img{
+	width: 60px;
+	height: 60px;
+    border-radius: 30px;
+}
+
+.logotipo h1 span{
+	color: #ff5900;
+}
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+	gap: 16px;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+
+body > main{
+	min-height: calc(100vh - 302px);
+	padding: 16px;
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+body > footer{
+	background: #000;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
