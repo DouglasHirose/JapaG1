@@ -1,4 +1,11 @@
-body > header{
+body{
+	margin: 0;
+	color: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 1.1rem;
+}
+
+header{
 	height: 70px;
 	background: #FCAF55;
 	padding: 0 16px;
@@ -7,19 +14,19 @@ body > header{
 	justify-content: space-between;
 }
 
-body > header nav a{
+header nav a{
 	color: #FFF;
 	text-decoration: none;
 	padding: 0 0 21px 0;
 }
 
-body > header nav a:hover{
+header nav a:hover{
 	color: #ff5900;
 	
 	border-bottom: 3px solid #ff5900; 
 }
 
-body > header nav a.active{
+header nav a.active{
 	color: #ac3c00;
 	border-bottom: 3px solid #ac3c00;
 }
@@ -49,18 +56,16 @@ nav ul{
 	align-items: center;
 }
 
-body > main{
-	min-height: calc(100vh - 302px);
-	padding: 16px;
-	display: flex;
-	gap: 16px;
-	flex-wrap: wrap;
-}
-
-body > footer{
-	background: #000;
+footer{
+	background: #272727;
 	height: 70px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.container{
+	background-color: bisque;
+	display: flex;
+    justify-content: center;
 }

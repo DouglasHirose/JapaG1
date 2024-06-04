@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JapaG1 - Início</title>
 	<link rel="stylesheet" href="../css/principal.css">
-	<script src="../js/main.js"></script>
+	<link rel="stylesheet" href="../css/api.css">
+	<link rel="stylesheet" href="../css/carrossel.css">
 </head>
 <body>
     <header>
@@ -15,14 +16,47 @@
 		<nav>
 			<ul>
 				<li><a href="inicio.html">Home</a></li>
-				<li><a href="about.html">Quem Somos</a></li>
+				<li><a href="about.html">Sobre</a></li>
 				<li><a href="contato.html">Contato</a></li>
 			</ul>
 
 		</nav>
 	</header>
+	<main>
+
+	<div class="player_twitch">
+
+		<h3 id="load">loading</h3>
+		<div id="twitch-embed"></div>
+		<div id="status"></div>
+
+		<script src="https://embed.twitch.tv/embed/v1.js"></script>
+		<script src="../js/twitch.js"></script>
+	</div>
+	<br>
+	<div class="container">
+		<div class="carousel">
+			<button class="prev">◀</button>
+			<div class="carousel-inner">
+				<div class="carousel-item">
+					<iframe src="https://www.youtube.com/embed/u-ePjNumcFM?si=2l-vVv8Hp4mtQrOS" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="carousel-item">
+					<iframe src="https://www.youtube.com/embed/8lmclNJPyfE?si=MlpEAkNfaRvVP7_W" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="carousel-item">
+					<iframe src="https://www.youtube.com/embed/c4qQjnYw0TE?si=3Ws4jMytBfDCQzYS" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<!-- Adicione mais vídeos conforme necessário -->
+			</div>
+			<button class="next">▶</button>
+		</div>
+	
+		<script src="../js/youtube.js"></script>
+	</div>
+	</main>
 </body>
 <footer>
-	
+	<h5>JapaG1.Info© - All rights reserved</h5>	
 </footer>
 </html>

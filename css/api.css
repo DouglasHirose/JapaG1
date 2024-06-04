@@ -1,0 +1,37 @@
+main{
+    position: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.player_twitch{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+}
+#status {
+    display: flex;
+    justify-content: center;
+}
+
+#twitch-embed{
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 21 / 9;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#load{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: rgba(27, 27, 27, 0.5);
+    z-index: 1;
+    text-align: center;
+}
