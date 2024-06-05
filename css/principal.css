@@ -56,6 +56,10 @@ nav ul{
 	align-items: center;
 }
 
+.banner{
+	width: 100%;
+}
+
 footer{
 	background: #272727;
 	height: 70px;
@@ -68,4 +72,15 @@ footer{
 	background-color: bisque;
 	display: flex;
     justify-content: center;
+}
+
+.container-text{
+	color: black;
+	background-color: aliceblue;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	padding: 15px;
 }
