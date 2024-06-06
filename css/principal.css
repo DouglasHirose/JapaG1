@@ -109,6 +109,12 @@ footer {
 	text-align: justify;
 	padding-left: 70px;
 	padding-right: 70px;
+	padding-bottom: 20px;
+}
+
+.container-text p{
+	padding: 0;
+	margin: 5px;
 }
 
 .floating-button {
@@ -129,4 +135,21 @@ footer {
 
 .floating-button:hover {
 	background-color: #128C7E; /* Cor alternativa (verde) */
-  }
+}
+
+.profile {
+	display: flex;
+    justify-content: center;
+	flex-direction: row;
+}
+
+.profile img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+#legenda{
+	margin: 0;
+	font-size: 10px;
+}

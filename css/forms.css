@@ -26,18 +26,18 @@ input[type=text], input[type=email], input[type=password], select, textarea{
 }
 
 input[type=submit], input[type=reset]{
-	border: 1px solid #ac3c00;
+	border: 1px solid #ff9f6b;
 	color: #FFF;
 	border-radius: 30px;
 	padding: 10px 20px;
-	background: #ac3c00;
+	background: #f89864;
 	font-size: 1.1rem;
 	margin: 16px 16px 16px 0;
 	cursor: pointer; 
 }
 
 input[type=submit]:hover, input[type=reset]:hover{
-	background: #ff5900;
+	background: #ff9f6c;
 }
 
 input[type=submit]:active, input[type=reset]:active{
