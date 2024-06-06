@@ -1,0 +1,45 @@
+fieldset{
+	width: 470px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 15px;
+	margin: 0 0 30px 0;
+}
+fieldset h5{
+	font-size: 1.1rem;	
+}
+
+legend {
+	font-size: 1.2rem;
+	padding: 0 10px 5px 10px;
+}
+
+input[type=text], input[type=email], input[type=password], select, textarea{
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	margin: 3px 0 16px 0;
+	border: none;
+	background: #333333;
+	color: #FFF;
+}
+
+input[type=submit], input[type=reset]{
+	border: 1px solid #ac3c00;
+	color: #FFF;
+	border-radius: 30px;
+	padding: 10px 20px;
+	background: #ac3c00;
+	font-size: 1.1rem;
+	margin: 16px 16px 16px 0;
+	cursor: pointer; 
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+	background: #ff5900;
+}
+
+input[type=submit]:active, input[type=reset]:active{
+	background: #6a2501;
+}

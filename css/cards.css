@@ -1,4 +1,4 @@
-.cards{
+.cards, .cards2{
     display: flex;
     justify-content: space-around;
 }
@@ -30,4 +30,22 @@
     width: 40px;
     height: 40px;
     margin-right: 10px;
+}
+
+.card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card2 img{
+    width: 50px;
+    height: 50px;
 }
