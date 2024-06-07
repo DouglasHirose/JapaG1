@@ -45,6 +45,23 @@
     transition: transform 0.2s;
 }
 
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card2 a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.card2 img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
 .card3 {
     display: flex;
     align-items: center;
@@ -62,12 +79,48 @@
     transition: transform 0.2s;
 }
 
-.card2 img{
-    width: 50px;
-    height: 50px;
+.card3:hover {
+    transform: scale(1.05);
+}
+
+.card3 a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
 }
 
 .card3 img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.card4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card4:hover {
+    transform: scale(1.05);
+}
+
+.card4 a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.card4 img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
