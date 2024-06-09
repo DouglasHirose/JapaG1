@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../css/principal.css">
 	<link rel="stylesheet" href="../../css/api.css">
-	<link rel="stylesheet" href="../../css/carrossel.css">
+	<link rel="stylesheet" href="../../css/carrosselnet.css">
+	<link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
     <header>
@@ -19,8 +20,9 @@
 				<li><a href="inicio.html">Home</a></li>
 				<li><a href="about.html">Sobre</a></li>
 				<li><a href="contato.html">Contato</a></li>
+				<li><button id="toggle-theme">Light/Dark Mode</button></li>
+				<script src="../../js/mode.js"></script>
 			</ul>
-
 		</nav>
 	</header>
 	<main>
@@ -34,32 +36,18 @@
 		<script src="https://embed.twitch.tv/embed/v1.js"></script>
 		<script src="../../js/twitch.js"></script>
 	</div>
+
 	<br>
-	<div class="carrossel">
-		<div class="carousel">
-			<button class="prev">◀</button>
-			<div class="carousel-inner">
-				<div class="carousel-item">
-					<iframe src="https://www.youtube.com/embed/u-ePjNumcFM?si=2l-vVv8Hp4mtQrOS" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="carousel-item">
-					<iframe src="https://www.youtube.com/embed/0og2Kca1v6M?si=iXv3WfHVzaJvXdVJ" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="carousel-item">
-					<iframe src="https://www.youtube.com/embed/8lmclNJPyfE?si=QspI6Za7-b6yr5OP" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="carousel-item">
-					<iframe src="https://www.youtube.com/embed/c4qQjnYw0TE?si=R_R-wD7Irr_hXJH1" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="carousel-item">
-					<iframe src="https://www.youtube.com/embed/7ASWwB_S2H0?si=JClA6GbKXaSUhr1d" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-			<button class="next">▶</button>
-		</div>
-		<script src="https://www.youtube.com/iframe_api"></script>
+	<div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-inner" id="carouselInner">
+            </div>
+        </div>
+        <button id="prevBtn" class="carousel-btn prev-btn">◄</button>
+        <button id="nextBtn" class="carousel-btn next-btn">►</button>
+    </div>
 		<script src="../../js/youtube.js"></script>
-	</div>
+		<br>
 	</main>
 </body>
 <footer>

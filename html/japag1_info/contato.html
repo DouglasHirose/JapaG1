@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,8 @@
 			<ul>
 				<li><a href="inicio.html">Home</a></li>
 				<li><a href="contato.html">SAC</a></li>
+				<li><button id="toggle-theme">Light/Dark Mode</button></li>
+				<script src="../../js/mode.js"></script>
 			</ul>
 		</nav>
 	</header>
@@ -28,9 +30,9 @@
 		<div class="banner">
 		<img class="banner" src="../../img/contato.png">
 	</div>
-	<div class="container-text">
-		<h1>Dúvidas? Entre em contato!</h1>
+	<div>
 		<form action="exemplo-server.php" method="POST">
+			<h1>Dúvidas? Entre em contato!</h1>
 			<fieldset>
 				<legend>Dados Pessoais</legend>
 				<label for="nome">Nome:</label>
