@@ -1,4 +1,3 @@
-// script.js
 fetch('videos.json')
     .then(response => response.json())
     .then(data => {
@@ -27,7 +26,7 @@ fetch('videos.json')
                     currentIndex = 0;
                 }
                 updateCarousel();
-            }, 5000); // 5000ms = 5 segundos
+            }, 5000);
         }
         
         function stopAutoPlay() {
@@ -78,13 +77,11 @@ fetch('videos.json')
             });
         }
         
-        // Carregar a API do iframe do YouTube
         const tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
         const firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         
-        // Inicializa o estado dos botões
         updateButtons();
         startAutoPlay();
     })

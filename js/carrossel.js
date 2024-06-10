@@ -10,10 +10,9 @@ function moveSlide(direction) {
 
 function autoSlide() {
     moveSlide(1);
-    setTimeout(autoSlide, 3000); // Muda a imagem a cada 3 segundos
+    setTimeout(autoSlide, 3000);
 }
 
-// Iniciar o carrossel automático quando a página for carregada
 document.addEventListener('DOMContentLoaded', (event) => {
     autoSlide();
 });

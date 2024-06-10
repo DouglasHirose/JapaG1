@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentTheme) {
         document.body.classList.add(currentTheme);
     } else {
-        document.body.classList.add('light'); // tema padrão
+        document.body.classList.add('light');
     }
 
     toggleThemeButton.addEventListener('click', () => {
