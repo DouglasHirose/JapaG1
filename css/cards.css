@@ -125,3 +125,55 @@
     height: 40px;
     margin-right: 10px;
 }
+
+.card-buttons {
+    position: flex;
+    top: 10px;
+    right: 10px;
+}
+.card-buttons button {
+    margin-left: 5px;
+    background: #f89864;
+	font-size: 1.1rem;
+	margin: 16px 16px 16px 0;
+	cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid #ff9f6b;
+	color: #FFF;
+}
+
+.card5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    max-width: 80%;
+}
+
+.card6{
+    display: inline-table;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card6 button{
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+    margin: 16px;
+}

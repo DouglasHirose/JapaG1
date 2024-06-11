@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
 document.getElementById('chamadoForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -13,6 +13,10 @@ document.getElementById('chamadoForm').addEventListener('submit', function(event
         <h2>Chamado de ${nome} ${sobrenome}</h2>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Descrição:</strong> ${comentario}</p>
+        <div class="card-buttons">
+            <button onclick="editCard(this)">Editar</button>
+            <button onclick="deleteCard(this)">Excluir</button>
+        </div>
     `;
 
     document.getElementById('cardsContainer').appendChild(card);
@@ -26,4 +30,22 @@ document.getElementById('chamadoForm').addEventListener('submit', function(event
     
     document.getElementById('chamadoForm').reset();
 });
-});
+
+   function editCard(button) {
+        const card = button.parentElement.parentElement;
+        const nomeSobrenome = card.querySelector('h2').innerText.split(' ');
+        const email = card.querySelector('p strong').nextSibling.textContent;
+        const comentario = card.querySelector('p:nth-of-type(2)').innerText.replace('Comentário: ', '');
+
+        document.getElementById('nome').value = nomeSobrenome[2];
+        document.getElementById('sobrenome').value = nomeSobrenome.slice(3).join(' ');
+        document.getElementById('email').value = email.trim();
+        document.getElementById('comentario').value = comentario;
+
+        card.remove();
+    }
+
+    function deleteCard(button) {
+        const card = button.parentElement.parentElement;
+        card.remove();
+    }
